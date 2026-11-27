@@ -33,7 +33,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     document.documentElement.lang = lang
-    document.title = lang === 'lo' ? 'ທ່ຽວລາວ — ຄູ່ມືການທ່ອງທ່ຽວ' : 'Visit Laos — Travel Guide'
+    document.title = 'เว็บแนะนำการท่องเที่ยวในลาว'
     try {
       localStorage.setItem(KEY, lang)
     } catch {
